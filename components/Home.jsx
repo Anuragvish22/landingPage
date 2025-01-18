@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const localities = [
   { name: "Lower Parel", places: "493 places" },
@@ -125,7 +126,11 @@ const Home = () => {
       {/* Order Types */}
       <section className="container mx-auto py-12 px-4 w-[80vw]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="rounded-lg overflow-hidden shadow-md">
+          <a
+            href="https://www.zomato.com/mumbai/delivery?delivery_subzone=10097"
+            target="_blank"
+            className="rounded-lg overflow-hidden shadow-md"
+          >
             <img
               src="/orderOnline.jpg"
               alt="Order Online"
@@ -137,8 +142,12 @@ const Home = () => {
                 Stay home and order to your doorstep
               </p>
             </div>
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
+          </a>
+          <a
+            href="https://www.zomato.com/mumbai/restaurants"
+            target="_blank"
+            className="rounded-lg overflow-hidden shadow-md"
+          >
             <img
               src="/dining.jpg"
               alt="Dining"
@@ -150,8 +159,12 @@ const Home = () => {
                 View the city's favourite dining venues
               </p>
             </div>
-          </div>
-          <div className="rounded-lg overflow-hidden shadow-md">
+          </a>
+          <a
+            href="https://www.zomato.com/live/city/mumbai/events"
+            className="rounded-lg overflow-hidden shadow-md"
+            target="_blank"
+          >
             <img
               src="/liveEvents.jpg"
               alt="Live Events"
@@ -163,7 +176,7 @@ const Home = () => {
                 Discover India's best events & concerts
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
